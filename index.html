@@ -1,1 +1,163 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+
+    <title>Introduction to Hacking with Shubhro Saha &amp; Charlie Marsh</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+
+    <!-- Fonts from Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><b>INTRODUCTION TO HACKING</b></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#announcement">Announcement</a></li>
+            <li><a href="#slides">Syllabus &amp; Lecture Slides</a></li>
+            <li><a href="#instructors">Instructors</a></li>
+            <li><a href="https://github.com/introtohacking/">Course Github</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+	<div id="headerwrap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8">
+					<h1>Solve practical, real-world<br /> problems with programming</h1>
+                    <br />
+					<form class="form-inline" role="form" action="http://introtohackingemailer.herokuapp.com/submit" method="POST">
+					  <div class="form-group">
+					    <input type="email" class="form-control" id="exampleInputEmail1" name="email" placeholder="Enter your Princeton email">
+					  </div>
+					  <button type="submit" class="btn btn-warning btn-lg">Sign up</button>
+					</form>					
+				</div><!-- /col-lg-6 -->
+				<div class="col-lg-4">
+					<img class="img-responsive" style="height:340px;" src="assets/img/logo.png" alt="" />
+				</div><!-- /col-lg-6 -->
+				
+			</div><!-- /row -->
+		</div><!-- /container -->
+	</div><!-- /headerwrap -->
+	
+    <script>
+        document.getElementById("exampleInputEmail1").focus();
+    </script>
+	
+	<div class="container">
+		<div class="row mt centered">
+			<div class="col-lg-6 col-lg-offset-3">
+                <a id="announcement"></a>
+				<h3>Sponsored by the <a target="_blank" href="http://princetoneclub.com/">Princeton Entrepreneurship Club</a></h3>
+			</div>
+		</div><!-- /row -->
+		
+		<div class="row mt">
+            <div class="col-lg-6 col-lg-offset-3" style="text-align:justify">
+				<p>Put your CS skills to use by learning to solve practical, real-world problems with programming. Topics include: building a web scraper, applying machine learning techniques with Python, and mastering Git. The classes are designed to be modular in nature, offering students the chance to attend every session or just those they find most interesting. After class, the instructors will be available for a "Hack Hour", during which students will be encouraged to ask questions about personal projects or other programming topics. This course will be most useful to students with basic programming experience in any language, whether it be through COS 126, other non-CS classes, or side projects.</p>
+			</div><!--/col-lg-6 -->
+		</div><!-- /row -->
+	</div><!-- /container -->
+	
+	<div class="container">
+		<hr>
+		<div class="row centered">
+			<div class="col-lg-10 col-lg-offset-1">
+				<h3>Spring 2014 -- Mondays (starting 3/31) at 8:30 PM. Optional Hack Hour at 9:30 PM</h3>
+			</div>
+			<div class="col-lg-3"></div>
+		</div><!-- /row -->
+		<hr>
+	</div><!-- /container -->
+	
+	<div class="container">
+        <div class="row mt centered">
+			<div class="col-lg-6 col-lg-offset-3">
+                <a id="slides"></a>
+				<h1>Syllabus &amp; Lecture Slides</h1>
+				<h3>Slides will be posted before the start of each class</h3>
+			</div>
+		</div>
+        <div class="row mt">
+            <div class="col-lg-8 col-lg-offset-2">
+                <ol style="font-size:150%; margin-left:80px;">
+                    <li> (03/31) Introduction to the Course</li>
+                    <li> (03/31) Data Analysis: Python, iPython Notebook</li>
+                    <li> (04/07) Web Scraping: Pattern, Scrapy</li>
+                    <li> (04/14) Web Automation: Splinter, PhantomJS</li>
+                    <li> (04/21) Terminal Utilities: Git, Bash Tricks</li>
+                    <li> (04/28) Machine Learning &amp; Image Processing: Scikit Family</li>
+                    <li> (05/05) DevOps 101: AWS, Heroku</li>
+                    <li> (05/05) Security: Wireshark, Password-Cracking</li>
+                </ol>
+            </div>
+        </div>
+	</div>
+	
+	<div class="container">
+        <hr>
+		<div class="row mt centered">
+			<div class="col-lg-6 col-lg-offset-3">
+                <a id="instructors"></a>
+				<h1>Instructors</h1>
+			</div>
+		</div><!-- /row -->
+		
+		<div class="row mt centered">
+            <div class="col-lg-2">
+                &nbsp;
+            </div>
+			<div class="col-lg-4">
+				<a target="_blank" href="http://www.princeton.edu/~saha/"><img class="img-circle" src="assets/img/shubhro.png" width="140" alt=""></a>
+				<h4>Shubhro Saha '15, BSE CS</h4>
+				<p><a target="_blank" href="http://www.princeton.edu/~saha/">Web Site</a></p>
+			</div><!--/col-lg-6 -->
+
+			<div class="col-lg-4">
+				<a target="_blank" href="http://www.princeton.edu/~crmarsh/"><img class="img-circle" src="assets/img/charlie.png" width="140" alt=""></a>
+				<h4>Charlie Marsh '15, BSE CS</h4>
+				<p><a target="_blank" href="http://www.princeton.edu/~crmarsh/">Web Site</a></p>
+			</div><!--/col-lg-4 -->
+            <div class="col-lg-2">
+                &nbsp;
+            </div>
+		</div><!-- /row -->
+	</div><!-- /container -->
+	
+	<div class="container">
+		<hr>
+		<p class="centered">Theme based on BlackTie.co - &copy; 2014 Shubhro Saha &amp; Charlie Marsh</p>
+	</div><!-- /container -->
+  </body>
+</html>
