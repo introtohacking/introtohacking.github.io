@@ -24,6 +24,14 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
+
+    <script>
+        function showSubmitProgress() {
+            document.getElementById("signupButton").disabled = true;
+            document.getElementById("signupButton").innerHTML = "Submitting...";
+        }
+    </script>
+
   </head>
 
   <body>
@@ -56,11 +64,12 @@
 				<div class="col-lg-8">
 					<h1>Solve practical, real-world<br /> problems with programming</h1>
                     <br />
-					<form class="form-inline" role="form" action="http://introtohackingemailer.herokuapp.com/submit" method="POST">
+					<form class="form-inline" role="form" action="http://introtohackingemailer.herokuapp.com/submit" method="POST" onsubmit="showSubmitProgress();">
 					  <div class="form-group">
-					    <input type="email" class="form-control" id="exampleInputEmail1" name="email" placeholder="Enter your Princeton email">
+					    <input type="email" class="form-control" id="signupEmail" name="email" placeholder="Enter your Princeton email">
 					  </div>
-					  <button type="submit" class="btn btn-warning btn-lg">Sign up</button>
+					  <button id="signupButton" type="submit" class="btn btn-warning btn-lg">Sign up</button>
+                      <img id="displayProgress" style="display:none;" src="assets/img/loading.gif"></img>
 					</form>					
 				</div><!-- /col-lg-6 -->
 				<div class="col-lg-4">
